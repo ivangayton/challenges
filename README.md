@@ -17,13 +17,13 @@ TODO: flesh this out
 
 A free software professional application for mobile data collection, integrated with QGIS and compatible with the OpenStreetMap ecosystem. Specifically intended for sophisticated surveying, not basic collection of favorites.
 
-
+[Field data collection app](https://github.com/ivangayton/challenges/blob/master/Field_Data_Collection_app.md)
 
 ## Differential correction for mobile device GPS units
 
 Why put up with low precision from inexpensive devices when we can use differential correction to improve it substantially without buying expensive hardware?
 
-
+[Differential correction for mobile device GPS units](https://github.com/ivangayton/challenges/blob/master/Field_Data_Collection_app.md)
 
 ## Micro-servers
 Um, like this: [ODK Aggregate on Intel Edison](https://github.com/ivangayton/ODKAggregateOnEdison)
@@ -32,7 +32,7 @@ Um, like this: [ODK Aggregate on Intel Edison](https://github.com/ivangayton/ODK
 
 A small web server running on an Android device that serves as an offline access point and aggregate server for OpenDataKit. Intended to facilitate large-scale data collection in low-income settings with minimal hardware dependencies and maximum use of locally available resources.
 
-[No doc yet](#)
+[Android-based server for mobile data collection](https://github.com/ivangayton/challenges/blob/master/Android-based_survey_aggregate_server.md)
 
 ## Mesh networking using mobile phone transceivers.
 
