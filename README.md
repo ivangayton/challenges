@@ -38,6 +38,11 @@ The results of the crowdsourced mapping can be used to train automated imagery r
 - Efficient server-client communication
    - This application can generate quite a lot of data transfer, which can become unwieldy for both the client (and the user's data plan) and the server. Optimizing data transfer and sync is a big help.
 
+## Buendia 2.0
+Medical records on locally appropriate devices in low-income settings without reliable power, connectivity, and educational infrastructure (technologically and cognitively constrained environment).
+
+TODO: flesh this out
+
 ## Unnamed GIS Field Data Collection Mobile App
 Update: looks like someone has had a good crack at this:
 http://www.opengis.ch/ An app called QField, though it looks like parts of it are broken
