@@ -39,3 +39,8 @@ A small web server running on an Android device that serves as an offline access
 Why do we need cell towers if we're all in the same village?
 
 [No doc yet](#)
+
+## Long-distance, low-bandwidth data transmission for Africa
+
+A system to allow small but critical amounts of data to be reliably exchanged with rural African areas using HF-band radio. Intended to facilitate epidemic monitoring, humanitarian asset tracking, financial inclusion, and requests for emergency response.
+
