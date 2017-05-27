@@ -36,3 +36,48 @@ The results of the crowdsourced mapping can be used to train automated imagery r
   - Stuff like MapSwipe works because it feels like a game. Not to say frivolous, or loaded with smarmy manipulative incentives, but responsive and fun to use. That's not just a coder's job; quality visual and UX design matters a great deal.
 - Efficient server-client communication
    - This application can generate quite a lot of data transfer, which can become unwieldy for both the client (and the user's data plan) and the server. Optimizing data transfer and sync is a big help.
+
+<hr>
+
+# Descriptions of functionality (for mock-ups)
+
+- Tracing a road: the user is moving a finger along a road, creating a visible trace along that road. 
+  - Upon finishing the trace, a popup appears asking the user to classify the road according to some schema, for example 1) primary road, 2) secondary road, 3) track (these might include example images showing what these choices look like)
+  - Issue: what if there's a road oriented in such a way that tracing it duplicates the movement of swiping to the next tile?
+    - Mitigation: perhaps the "swipe to the next tile" gesture is faster. Less attractively, perhaps the tracing gesture begins with a tap to differentiate it from a swipe (similar to the common "tap-and-move" gesture for dragging items).
+
+- Tapping on a building to zoom in on it: buildings are usually too small to trace comfortably with the tile at full size. In fact, we probably want the building to basically fill 70% of the screen, even though this will pixillate the hell out of it; it allows the user to comfortably trace around the building. A second tap should un-zoom, and while in zoomed state a pinch gesture should allow adjustment of the zoom (the default zoom should be the previous zoom the user was at prior to tapping out)
+
+- Tracing a rough line around a building: the user zooms around the building with a finger, creating a rough outline. Once the trace is completed and the finger lifts, the trace, if closed (the endpoint is within a few pixels of the beginning point), it automatically jumps to the next step (the snap).
+
+- Snapping a rough outline to a simplified and symmetrical one: if the trace is nearly circular (like a lot of African huts) the rough outline will snap to a circle (actually a polygon with 12+ vertices to look nearly round).  If it's not circular, it snaps to an outline composed of right angles (most buildings do not have parallelogram shapes). The snap is accompanied by buttons (outside of the outline, or at least not overlapping the perimeter) allowing the user to 1) accept or 2) discard the snapped result, or 3) to keep the hand-trace unsnapped (in the occasional event of buildings that don't correspond to either a round or rectilinear shape).  
+
+### Less important, but still useful:
+
+- Swiping to a new tile: the fundamental underlying UX gesture of MapSwipe is swiping to the next thing. This maintains consistency for users coming from the classification activity. Right-swipe=next tile.  Tiles are shown filling the entire screen, unlike in the classification app where there are six tiles per screenful.  A cool mockup would be mid-swipe.
+
+## A few tiles to play with:
+
+Chad zoom 18 huts:
+
+http://t0.tiles.virtualearth.net/tiles/a122213321100212200.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+Chad zoom 19 huts:
+
+http://t0.tiles.virtualearth.net/tiles/a1222133211002122001.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+http://t0.tiles.virtualearth.net/tiles/a1222133211002122012.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+Congo zoom 18 houses:
+
+http://t0.tiles.virtualearth.net/tiles/a122323223200031101.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+Congo zoom 18 houses and roads:
+
+http://t0.tiles.virtualearth.net/tiles/a122323223200031103.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+Congo zoom 19 houses:
+
+http://t0.tiles.virtualearth.net/tiles/a1223232232000311013.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
+
+http://t0.tiles.virtualearth.net/tiles/a1223232232000311012.jpeg?g=854&mkt=en-US&token=AopsdXjtTu-IwNoCTiZBtgRJ1g7yPkzAi65nXplc-eLJwZHYlAIf2yuSY_Kjg3Wn
