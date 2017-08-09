@@ -1,7 +1,7 @@
 ## Unnamed GIS Field Data Collection Mobile App
 
-Update: looks like someone has had a good crack at this:
-http://www.opengis.ch/ An app called QField, though it looks like parts of it are broken
+Update: looks like someone has made an attempt to build something like this:
+http://www.opengis.ch/ An app called QField, though it looks like parts of it are broken; it doesn't render well on phones (presumably because it's a direct port of the QGIS QT GUI), and crashes almost instantly on every device I've tried it on.
 
 Geographical Information Systems have become incredibly accessible. QGIS (qgis.org) is an astoundingly capable free software GIS platform, allowing anyone with the requisite knowledge, skill, and a low-end laptop to produce high-quality maps without spending a penny on software (though I strongly encourage anyone who uses it professionally, for pay, to donate money to the project; I do so myself).
 
