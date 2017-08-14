@@ -1,8 +1,9 @@
 ## Unnamed GIS Field Data Collection Mobile App
 
-Update: looks like someone has made an attempt to build something like this:
+*Update: looks like someone has made an attempt to build something like this:
 http://www.opengis.ch/ An app called QField, though it looks like parts of it are broken; it doesn't render well on phones (presumably because it's a direct port of the QGIS QT GUI), and crashes almost instantly on every device I've tried it on.
 
+### Overview
 Geographical Information Systems have become incredibly accessible. QGIS (qgis.org) is an astoundingly capable free software GIS platform, allowing anyone with the requisite knowledge, skill, and a low-end laptop to produce high-quality maps without spending a penny on software (though I strongly encourage anyone who uses it professionally, for pay, to donate money to the project; I do so myself).
 
 More sophisticated users with command line abilites can use spectacularly powerful tools like PostGIS, R, and GDAL (anyone thinking of sneering, have a look at by buddy Stephen Mather's blog: https://smathermather.com/category/analysis/; if you think free GIS software is for amateurs I'd like to to see you tangle with Steve).
@@ -12,6 +13,8 @@ High-quality, high-resolution maps built from locally sourced field data are pot
 The full power of GIS is available when you have a field data collection application and hardware and a GIS software platform. The latter requirement has been knocked out of the park, but the current options for field data collection remainare limited. Dedicated hardware is expensive; it costs several thousand dollars for a high-accuracy commercial GPS device. However, the GPS units in ordinary Android phones can be surprisingly accurate, and there's room for improvement with the above related challenge.
 
 The main gap: there simply isn't a high-quality free software mobile data collection application out there. This drives people back into the arms of the commercial GIS vendors, whose free-as-in-beer (or perhaps better described as bait-and-switch) offerings require users to buy into their walled gardens of proprietary software, making decent GIS data collection difficult for people in low-income countries to access (note: while I am indeed an ideological supporter of free software, so you can save yourself the time of pointing out that bias, in this case what I'm talking about is purely practical: the inaccessibility of proprietary software to African citizens who could otherwise be full partners in the mapping of their own continent).
+
+### Requirements
 
 What does a full-featured mobile GIS data collection application need to complete the free software GIS ecosystem?
 
