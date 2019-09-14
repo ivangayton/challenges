@@ -78,6 +78,7 @@ Additionally, as of 2016 Android allows direct access to the GNSS (Global Naviga
 
 The GPS-enabled applications on mobile phones simply calculate their position based on the signals they receive from the satellites. They don't even record the metadata necessary to perform corrections. RTKLib can be used on Android, but it needs to be properly integrated into apps, ideally as a transparent replacement for the standard Android location API, with added functionality to allow arbitrary apps to record raw GNSS data or some subset thereof.
 
+[OpenDataKit](https://opendatakit.org) is our first target platform. It currently saves position data as points and lines (that it calls GeoPoints and GeoTraces). These can be improved by simply increasing the accuracy of the positioning, but ideally ODK would be able to function as a fully-fledged rover application, recording raw GNSS data on the Collect platform and providing user-friendly correction on the back end. This probably requires adding a new datatype to ODK that extends the geographical capabilities and formats significantly. 
 
 ## Resources needed:
 
