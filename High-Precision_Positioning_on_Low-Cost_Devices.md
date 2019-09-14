@@ -2,9 +2,9 @@
 
 ## Goal
 
-A fully Free Software/Open Source toolchain allowing practical and reliable high-precision positioning on low-cost devices.
+**A fully Free Software/Open Source toolchain allowing practical and reliable high-precision positioning on low-cost devices.**
 
-Specifically: enable sub-decimeter positioning with a total hardware cost under USD$300 and widely available in low-income areas.
+**Specifically: enable sub-decimeter positioning with a total hardware cost under USD$300 and make it widely available in low-income areas.**
 
 ## Problem Statement
 
@@ -58,16 +58,38 @@ Components needed:
 
 ### Typical deployment
 
+![](Differential_GNSS_diagram.jpg)
+
+The simplest survey configuration is a single base station providing correction information for a single surveyor (rover).
+
+The base station is in a known location, either because it's placed on a known monument, or because it's been left for at least a long period ([up to 25 hours](https://www.sciencedirect.com/science/article/pii/S1110016817301795)) to collect a ["converged" position](https://d32ogoqmya1dw8.cloudfront.net/files/getsi/teaching_materials/high-precision/static_gnss_survey_methods.v4.pdf).
+
+Correction information from the base station is either streamed to an internet site (an [NTRIP caster](https://www.use-snip.com/kb/knowledge-base/question-what-is-an-ntrip/) or broadcast by a radio connection (or both).
+
+The surveyor or "Rover" carries a GNSS receiver and makes use of the correction information from the base station. At a minimum, this can be _nothing more than an Android phone_ provided it is capable of using raw GNSS data from the onboard receiver (most phones manufactured after 2016 with Android 7.0 or later). A more sophisticated and accurate rover setup would include an external GPS receiver and antenna. The Android application we propose to build will connect to the Internet to get correction information from the NTRIP caster and either provide it to the GNSS receiver (which may be able to calculate the differential corrections itself) or do the relevant calculations on the phone. The same Bluetooth link allows the phone to receive the positions (pre or post correction) from the GNSS receiver. In the event that there is no internet or radio connection to the base station, the application simply logs the raw GNSS data in a [RINEX](https://en.wikipedia.org/wiki/RINEX) format that allows the user to apply differential correction for high accuracy after completing the survey and retrieving the logged correction information from the base station as well.
 
 ### GNSS Receivers
 
 The [ublox ZED-F9P receiver](https://www.u-blox.com/en/product/zed-f9p-module), a $140 chip released in 2019, toether with a [$50 to $100 antenna](https://www.ardusimple.com/store/) can be [connected to a low-end Android phone](https://github.com/hcwinsemius/RTK_GNSS) and achieve sub-decimeter precision using correction data (real-tie or post-processed) from a base station (which can also be a ublox ZED-F9P, antenna, and Raspberry Pi for a total cost under $300).
 
-Additionally, as of 2016 Android allows direct access to the GNSS (Global Navigation Satellite System) data via [a class representing both raw and computed satellite information](https://developer.android.com/reference/android/location/GnssMeasurement.html). This is supported on [most phones manufactured in 2016 or later and shipped with Android 7.0 or higher](https://developer.android.com/guide/topics/sensors/gnss.html). The list of supported phones is growing quickly, and several are widely available in low-income countries. This means that a simple smartphone in the $100 range, without any external attachment whatsoever, can be 
+Additionally, as of 2016 Android allows direct access to the GNSS (Global Navigation Satellite System) data via [a class representing both raw and computed satellite information](https://developer.android.com/reference/android/location/GnssMeasurement.html). This is supported on [most phones manufactured in 2016 or later and shipped with Android 7.0 or higher](https://developer.android.com/guide/topics/sensors/gnss.html). The list of supported phones is growing quickly, and several are widely available in low-income countries. This means that a simple smartphone in the $100 range, without any external attachment whatsoever, can be used as a rover and achieve accuracy in the decimeter range.
 
-The GPS-enabled applications on mobile phones simply calculate their position based on the signals they receive from the satellites. They don't even record the metadata necessary to perform corrections.
+### Library and application development
+
+The GPS-enabled applications on mobile phones simply calculate their position based on the signals they receive from the satellites. They don't even record the metadata necessary to perform corrections. RTKLib can be used on Android, but it needs to be properly integrated into apps, ideally as a transparent replacement for the standard Android location API, with added functionality to allow arbitrary apps to record raw GNSS data or some subset thereof.
 
 
 ## Resources needed:
+
+| Item | Units | Cost per unit | Cost |
+|---|---|---:|---:|
+| Android software engineering | 6 months | $12,000 | $72,000 |
+| Back-end engineering | 3 months |  $12,000 | $36,000 |
+| Geodesic library engineering (hard math) | 3 months | $12,000 | $36,000 |
+| Project management (also codes) | 6 months | $12,000 | $72,000 |
+| Admin support | 6 months, 50% time | $3,000 | $18,000 |
+| Hardware | 1 pile of stuff | $5,000 | $5,000|
+| **TOTAL** | | | **$239,000** | 
+
 
 
