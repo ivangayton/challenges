@@ -15,7 +15,7 @@ Small-scale, poor, and informal landholders have very limited ability to define,
 We suspect that improving land surveying for property rights is likely to be one of the most impactful outcomes of access to low-cost high-accuracy positioning. However, history has shown that when given technological tools that create fundamental new capabilities, people often make unexpected use of them. A few possibilities include:
 
 - Allow small-scall and poor landholders to define and assert the boundaries of their plots
-- Improve vehicle navigation by making it less ambiguous which road one is traveling on
+- Improve vehicle navigation by making it less ambiguous which road or lane one is traveling on
 - Enable large-scale precise surveying of natural features such as rivers to improve environmental monitoring
 - Enable large-scale precise surveying of human infrastructure such as drainage and buildings to improve disaster preparedness
 
@@ -23,15 +23,15 @@ Of course, there is also potential for negative impact. It's easy to imagine lo-
 
 ## Proposed Solution
 
-Current low-cost devices (smartphones in the range of $100 to $1,000) have satellite positioning capability with a rough error margin of five meters (certain devices can do a bit better under ideal conditions; the best-case scenario is about two meters error).
+Current low-cost devices (smartphones in the range of $100 to $1,000) have satellite positioning capability with a rough error margin of five meters (certain devices can do a bit better under ideal conditions; the best-case scenario with a stand-alone consumer mobile device is about two meters error).
 
 Survey-grade or geodetic satellite positioning receivers in the range of $3,000 to $50,000 can achieve positional accuracy in the range of 3-50mm. This is done by:
 - Using antennas capable of receiving several frequencies of signal from positioning satellites.
 - Using such antennas to estimate [carrier wave phase](https://en.wikipedia.org/wiki/Real-time_kinematic) (determining not only the position of the satellite signal but the position within the wavelength (phase) of the carrier signal)
 - Using differential correction whereby measured positional errors from a satellite receive at a fixed "base station" are used to correct the positional measurements of a "rover"
-- Using algorithms that account for specific types of positional error or bias in multiple positional fixes to produce statistically robust "converged" positions
+- Using algorithms that account for specific types of positional error or bias in multiple positional fixes to produce statistically robust "converged" positions ([Precise Point Positioning or PPP](https://en.wikipedia.org/wiki/Precise_Point_Positioning))
 
-All of these methods are now possible to one extent or another on low-cost devices. Inexpensive external receivers (in the $250 range) can be attached to a low-end smartphone enabling accuracy in the range of a few centimeters, and even the internal GPS on many smartphones can be used with correction techniques to produce positional accuracy in the decimeter range.
+All of these methods are now possible to one extent or another on low-cost devices. Inexpensive external receivers (in the $250 range) can be attached to a low-end smartphone enabling accuracy in the range of a few centimeters, and even [the internal GPS on many smartphones can be used with correction techniques](https://www.gpsworld.com/innovation-examining-precise-point-positioning-now-and-in-the-future/) to produce positional accuracy in the decimeter range, though this is still contingent on [chipset and duty cycling](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6539034/) or even [small-scale movement of the receiver to reduce multipath errors](https://www.gpsworld.com/accuracy-in-the-palm-of-your-hand/).
 
 Low-cost hardware is already available for high-accuracy positioning. What's missing is software infrastructure.
 
@@ -72,13 +72,13 @@ The surveyor or "Rover" carries a GNSS receiver and makes use of the correction 
 
 The [ublox ZED-F9P receiver](https://www.u-blox.com/en/product/zed-f9p-module), a $140 chip released in 2019, toether with a [$50 to $100 antenna](https://www.ardusimple.com/store/) can be [connected to a low-end Android phone](https://github.com/hcwinsemius/RTK_GNSS) and achieve sub-decimeter precision using correction data (real-tie or post-processed) from a base station (which can also be a ublox ZED-F9P, antenna, and Raspberry Pi for a total cost under $300).
 
-Additionally, as of 2016 Android allows direct access to the GNSS (Global Navigation Satellite System) data via [a class representing both raw and computed satellite information](https://developer.android.com/reference/android/location/GnssMeasurement.html). This is supported on [most phones manufactured in 2016 or later and shipped with Android 7.0 or higher](https://developer.android.com/guide/topics/sensors/gnss.html). The list of supported phones is growing quickly, and several are widely available in low-income countries. This means that a simple smartphone in the $100 range, without any external attachment whatsoever, can be used as a rover and achieve accuracy in the decimeter range.
+Additionally, as of 2016 Android allows direct access to the GNSS (Global Navigation Satellite System) data via [a class representing both raw and computed satellite information](https://developer.android.com/reference/android/location/GnssMeasurement.html). This is supported on [most phones manufactured in 2016 or later and shipped with Android 7.0 or higher](https://developer.android.com/guide/topics/sensors/gnss.html). The list of supported phones is growing quickly, and several are widely available in low-income countries. This means that a simple smartphone in the $100 range, without any external attachment whatsoever, can in theory be used as a rover and achieve accuracy in the decimeter range.
 
 ### Library and application development
 
 The GPS-enabled applications on mobile phones simply calculate their position based on the signals they receive from the satellites. They don't even record the metadata necessary to perform corrections. RTKLib can be used on Android, but it needs to be properly integrated into apps, ideally as a transparent replacement for the standard Android location API, with added functionality to allow arbitrary apps to record raw GNSS data or some subset thereof.
 
-[OpenDataKit](https://opendatakit.org) is our first target platform. It currently saves position data as points and lines (that it calls GeoPoints and GeoTraces). These can be improved by simply increasing the accuracy of the positioning, but ideally ODK would be able to function as a fully-fledged rover application, recording raw GNSS data on the Collect platform and providing user-friendly correction on the back end. This probably requires adding a new datatype to ODK that extends the geographical capabilities and formats significantly. 
+[OpenDataKit](https://opendatakit.org) is our first target platform. It currently saves position data as points and lines (that it calls GeoPoints and GeoTraces). These can be improved by simply increasing the accuracy of the positioning, but ideally ODK would be able to function as a fully-fledged rover application, recording raw GNSS data on the Collect platform and providing user-friendly Post-Processing Kinematic or even Precise Point Positioning correction on the back end. This requires adding a new datatype to ODK that extends the geographical capabilities and formats significantly. 
 
 ## Resources needed:
 
