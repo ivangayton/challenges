@@ -14,7 +14,7 @@ Small-scale, poor, and informal landholders have very limited ability to define,
 
 We suspect that improving land surveying for property rights is likely to be one of the most impactful outcomes of access to low-cost high-accuracy positioning. However, history has shown that when given technological tools that create fundamental new capabilities, people often make unexpected use of them. A few possibilities include:
 
-- Allow small-scale and poor landholders to define and assert the boundaries of their plots
+- Allow small-scale and poor landholders to define and assert the boundaries of their plots via neighborhood associations and a distributed ledger
 - Improve vehicle navigation by making it less ambiguous which road or lane one is traveling on
 - Enable large-scale precise surveying of natural features such as rivers to improve environmental monitoring
 - Enable large-scale precise surveying of human infrastructure such as drainage and buildings to improve disaster preparedness

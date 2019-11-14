@@ -61,6 +61,12 @@ The basic method is:
 
 This process was [used in Sierra Leone](https://www.newsweek.com/2017/11/10/slums-missing-maps-map-international-poverty-695381.html) to map two of 13 districts in the country, and resulted in [an extraordinary increase in accuracy of patient origins](https://academic.oup.com/trstmh/article/113/9/572/5533380) within the local healthcare system. 
 
+## Why Open Mapping?
+Several high-quality proprietary mapping applications/databases exist, notably Google Maps, Apple Maps, and Bing Maps (Microsoft's offering). Why are we not relying on them to fill the need for local map information?
+
+Google is moving quickly to map many cities in Africa. Microsoft and Apple actually use quite a lot of OpenStreetMap data under the hood of their map offerings (both include a copyright notice crediting the OpenStreetMap contributors) and contribute substantially to the OpenStreetMap project with imagery, data quality support, and direct donations. However, these companies are ultimately motivated by commercial concerns; they earn money based on providing information (and advertising) to people with money to spend. The location of the nearest barista coffee shop from a given village in rural Congo is not commercially valuable information, and is therefore not the focus of commercial mapping efforts, open or proprietary. While the gap between map quality in African cities and those in high-income countries is closing, rural areas in low-income countries, especially in Africa, are being left behind. 
+
+Additionally, open map data is more effective for use in public health than proprietary information. The terms of service of Google Maps forbids use of the raw data offline; all use must be within the ecosystem of services provided or authorized by Google. In the case of patient origins&mdash;it is risky and generally problematic in terms of medical ethics to upload patient data to an internet-based platform. 
 
 ## Random leftover text for cleanup
 
