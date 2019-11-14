@@ -62,11 +62,35 @@ The basic method is:
 This process was [used in Sierra Leone](https://www.newsweek.com/2017/11/10/slums-missing-maps-map-international-poverty-695381.html) to map two of 13 districts in the country, and resulted in [an extraordinary increase in accuracy of patient origins](https://academic.oup.com/trstmh/article/113/9/572/5533380) within the local healthcare system. 
 
 ## Why Open Mapping?
+### Aren't there companies working on this?
 Several high-quality proprietary mapping applications/databases exist, notably Google Maps, Apple Maps, and Bing Maps (Microsoft's offering). Why are we not relying on them to fill the need for local map information?
 
-Google is moving quickly to map many cities in Africa. Microsoft and Apple actually use quite a lot of OpenStreetMap data under the hood of their map offerings (both include a copyright notice crediting the OpenStreetMap contributors) and contribute substantially to the OpenStreetMap project with imagery, data quality support, and direct donations. However, these companies are ultimately motivated by commercial concerns; they earn money based on providing information (and advertising) to people with money to spend. The location of the nearest barista coffee shop from a given village in rural Congo is not commercially valuable information, and is therefore not the focus of commercial mapping efforts, open or proprietary. While the gap between map quality in African cities and those in high-income countries is closing, rural areas in low-income countries, especially in Africa, are being left behind. 
+Google is moving quickly to map many cities in Africa. Microsoft and Apple actually use quite a lot of OpenStreetMap data under the hood of their map offerings (both include a copyright notice crediting the OpenStreetMap contributors) and contribute substantially to the OpenStreetMap project with imagery, data quality support, and direct donations. However, these companies are ultimately motivated by commercial concerns; they earn money based on providing information (and advertising) to people with money to spend. The location of the nearest barista coffee shop from a given village in rural Congo is not commercially valuable information, and is therefore not the focus of commercial mapping efforts, open or proprietary.
 
-Additionally, open map data is more effective for use in public health than proprietary information. The terms of service of Google Maps forbids use of the raw data offline; all use must be within the ecosystem of services provided or authorized by Google. In the case of patient origins&mdash;it is risky and generally problematic in terms of medical ethics to upload patient data to an internet-based platform. 
+While the gap between map quality in African cities and those in high-income countries is closing in both open and proprietary platforms, rural areas in low-income countries, especially in Africa, are being left behind.
+
+### Why OpenStreetMap specifically?
+Open map data is more effective for use in public health than proprietary information because it can be used outside of proprietary platforms, making it available for use by public health practitioners with less risk to the privacy and confidentiality of patient data.
+
+The terms of service of Google Maps forbids use of the raw data offline; all use must be within the ecosystem of services provided or authorized by Google. So if a public health officer wishes to correlate patient origin data from a clinic with Google map data, they must upload the patient data to a platform owned by Google or one of their commercial partners. It is risky and generally problematic in terms of medical ethics to upload patient data to an internet-based platform, not to mention difficult to access Web-based services from rural Africa.
+
+OpenStreetMap data, on the other hand, can be downloaded freely (both free of charge and free of restrictions on what can be done with it). 
+
+## Why Private Funding?
+Agencies like the Gates Foundation, Medecins Sans Frontieres (MSF), and the Red Cross have an interest in this data. One might ask why they are not funding it?
+
+In fact both MSF and the Red Cross movement have contributed money and resources to this effort. In several countries, they have actually funded small-scale versions of exactly this activity. The first real implementation of this agile, community member and motorcycle-based mapping was done by an MSF team in Sierra Leone during the Ebola outbreak of 2014-2015. However, these humanitarian agencies have relatively narrow mandates; their donors expect most of their funds to go to core operations. So while MSF and the Red Cross remain supporters, partners, and even donors to the effort, they will not fund the entire continental effort.
+
+We do hope that the Gates Foundation will be willing to contribute to this effort. However, the methodology we propose is unusually lightweight. While it is much less expensive than a traditional development-style effort for the expected outcome, it requires that donors be prepared to be flexible in their reporting requirements and acceptance of risk.
+
+If the project is done in the manner of traditional development aid, securing governmental and instutional partnerships alone will cost more than the entire propose project budget. We propose to work directly with African citizens, not governments or development-sector elites. This requires donors that won't be risking their entire portfolios by supporting such process that could be perceived by many in the sector as a maverick initiative (it's not; it's a citizen-based initiative that does not undermine governmental or aid sector responsibilities, but it's nevertheless a conceptual leap for most traditional donors). 
+
+## How is the data sustainable?
+Villages change, and map data can get out of date quite quickly. From our work in urban African environments, the Missing Maps has seen that the key to data sustainability is _data use_.
+
+Once a set of map data becomes sufficiently complete to be operationally useful to many agencies, it becomes much easier to solicit the resources to maintain it. The contributions of Apple and Microsoft to OpenStreetMap are a case in point; they began using OpenStreetMap because it was the only dataset complete enough to compete effectively with Google's offering. Once this worked for them, they began investing in supporting the dataset.
+
+While we don't expect the same type of support for rural areas (because the commercial incentive is less compelling), we nevertheless expect that a complete, accurate, and above all usable dataset of all settlements in sub-Saharan Africa will be so useful to both public and private sector users that, once they begin using it, some will be unwilling to let it degrade.
 
 ## Random leftover text for cleanup
 
