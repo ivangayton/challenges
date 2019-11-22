@@ -30,12 +30,33 @@ Our experiences in several African countries suggest that a fairly consistent 20
 
 Our program is quite straightforward: to find out the names of half a million villages, how they are described, and what larger communities they belong to, we'll simply go and ask. 
 
-We do not propose to introduce an external system of nomenclature. The [United Nations P-Codes](LINK) work fine for coordinating relief cluster logistics and donor reporting, but local people do not use or value them. Addressing systems like [WhatThreeWords](what3words.com) can be very useful for coordinating commercial and aid actors, but it is unrealistic to expect rural Africans to abandon centuries of traditional language and meaningful place-names for an pile of arbitrary phrases built by a pseudo-random algorithm. Our intention is to work together with local people to adapt our understanding&mdash;and the markings on maps&mdash;to their reality.
+We do not propose to introduce an external system of nomenclature. The [United Nations P-Codes](https://www.humanitarianresponse.info/applications/data/document/pcode-implementation) work fine for coordinating relief cluster logistics and donor reporting, but local people do not use or value them. Addressing systems like [WhatThreeWords](https://what3words.com/) can be very useful for coordinating commercial and aid actors, but it is unrealistic to expect rural Africans to abandon centuries of traditional language and meaningful place-names for an pile of arbitrary phrases built by a pseudo-random algorithm. Our intention is to work together with local people to adapt our understanding&mdash;and the markings on maps&mdash;to their reality.
 
 We will not ask local people to adapt to our system of naming and identifying places. We will adapt the global system of location to the language and terms of local people. 
 
+## The Proposed Project
+In 2017, the Missing Maps project piloted this methodology in [in Sierra Leone](https://www.newsweek.com/2017/11/10/slums-missing-maps-map-international-poverty-695381.html). Two of 13 districts in the country were mapped, and it resulted in [an extraordinary increase in accuracy of patient origins](https://academic.oup.com/trstmh/article/113/9/572/5533380) within the local healthcare system.
+
+For approximately USD$7M, we hope to replicate this project on a continental scale, visiting and mapping every inhabited area in 46 countries, reaching 1 billion people in just over 500,000 settlements in 24 months.
+
+[Details of the budget, operational plan, and assumptions can be found on the Web-based spreadsheet here](https://drive.google.com/file/d/1j4nLHKWw3fUFtjSvSYTKNNE3avzPQBKv/view?usp=sharing). _NOTE: this document can be viewed and commented upon by anyone who has the link, but editing is restricted._
+
+Here is a summary of projected costs:
+
+| Item                                     | Cost       |
+|------------------------------------------|-----------:|
+| Senior managment incl. Travel and accom  | $630,000   |
+| regional managers incl. Travel and accom | $594,000   |
+| Local supervisors                        | $426,800   |
+| Local team leaders                       | $633,600   |
+| Enumerators wages and motorcycles        | $2,395,140 |
+| Country offices                          | $370,000   |
+| Data analysts                            | $400,000   |
+| Digitizers                               | $253,440   |
+| HQ Admin costs @12%                      | $605,945   |
+| Total                                    | $6,308,925 |
+
 ## Operational Plan
-SEE SPREADSHEET
 
 It is only in the last few years that Android-based smartphones with GPS recievers have become ubiquitous in sub-Saharan Africa. While most people in the poorest countries do not have smartphones, it is generally the case in 2019 that _almost any given village_ has at least one or two GPS-capable Android devices (and often more, as even where there is no mobile network people use them as cameras, media players, and to play games).
 
@@ -57,15 +78,13 @@ The basic method is:
 - Train them by going to a few nearby villages and filling out the mapping survey together. Iron out bugs by checking the data immediately. Prioritize ensuring that they _ask_ the villagers where they are rather than _telling_ them.
 - Using satellite imagery and tracing done by Missing Maps volunteers to identify all roads and settlements, send the mappers out to systematically visit every human habitation in the area. Allow some overlap for quality checking.
 - As the team completes the area near their own homes, add more mappers who live at the edges of the area; these new recruits will cover the area near _their_ homes. They are onboarded quickly because they learn from the others. The best of the mappers are retained as trainers and supervisors and move with the project, the others are thanked, given their pay, and return home.
-
-
-This process was [used in Sierra Leone](https://www.newsweek.com/2017/11/10/slums-missing-maps-map-international-poverty-695381.html) to map two of 13 districts in the country, and resulted in [an extraordinary increase in accuracy of patient origins](https://academic.oup.com/trstmh/article/113/9/572/5533380) within the local healthcare system. 
+ 
 
 ## Why Open Mapping?
 ### Aren't there companies working on this?
 Several high-quality proprietary mapping applications/databases exist, notably Google Maps, Apple Maps, and Bing Maps (Microsoft's offering). Why are we not relying on them to fill the need for local map information?
 
-Google is moving quickly to map many cities in Africa. Microsoft and Apple actually use quite a lot of OpenStreetMap data under the hood of their map offerings (both include a copyright notice crediting the OpenStreetMap contributors) and contribute substantially to the OpenStreetMap project with imagery, data quality support, and direct donations. However, these companies are ultimately motivated by commercial concerns; they earn money based on providing information (and advertising) to people with money to spend. The location of the nearest barista coffee shop from a given village in rural Congo is not commercially valuable information, and is therefore not the focus of commercial mapping efforts, open or proprietary.
+Google is moving quickly to map many cities in Africa. Microsoft and Apple actually use quite a lot of OpenStreetMap data under the hood of their map offerings (both include a copyright notice crediting the OpenStreetMap contributors) and contribute substantially to the OpenStreetMap project with imagery, data quality support, and direct donations. However, these companies are ultimately motivated by commercial concerns; they earn money based on providing information (and advertising) to people with money to spend. The location of the nearest Starbucks from a given village in rural Congo is not commercially valuable information, and is therefore not the focus of commercial mapping efforts, open or proprietary.
 
 While the gap between map quality in African cities and those in high-income countries is closing in both open and proprietary platforms, rural areas in low-income countries, especially in Africa, are being left behind.
 
@@ -81,9 +100,9 @@ Agencies like the Gates Foundation, Medecins Sans Frontieres (MSF), and the Red 
 
 In fact both MSF and the Red Cross movement have contributed money and resources to this effort. In several countries, they have actually funded small-scale versions of exactly this activity. The first real implementation of this agile, community member and motorcycle-based mapping was done by an MSF team in Sierra Leone during the Ebola outbreak of 2014-2015. However, these humanitarian agencies have relatively narrow mandates; their donors expect most of their funds to go to core operations. So while MSF and the Red Cross remain supporters, partners, and even donors to the effort, they will not fund the entire continental effort.
 
-We do hope that the Gates Foundation will be willing to contribute to this effort. However, the methodology we propose is unusually lightweight. While it is much less expensive than a traditional development-style effort for the expected outcome, it requires that donors be prepared to be flexible in their reporting requirements and acceptance of risk.
+We do hope that instutions like the Gates Foundation will be willing to contribute to this effort. However, the methodology we propose is unusually lightweight. While it is much less expensive than a traditional development-style effort for the expected outcome, it requires that donors be prepared to be flexible in their reporting requirements and acceptance of risk.
 
-If the project is done in the manner of traditional development aid, securing governmental and instutional partnerships alone will cost more than the entire propose project budget. We propose to work directly with African citizens, not governments or development-sector elites. This requires donors that won't be risking their entire portfolios by supporting such process that could be perceived by many in the sector as a maverick initiative (it's not; it's a citizen-based initiative that does not undermine governmental or aid sector responsibilities, but it's nevertheless a conceptual leap for most traditional donors). 
+If the project is done in the manner of traditional development aid, securing governmental and instutional partnerships alone will cost more than the entire propose project budget. We propose to work directly with African citizens, not governments or development-sector elites. It's a citizen science-based initiative that does not undermine governmental or aid sector responsibilities but is nevertheless a conceptual leap for most traditional donors who expect close operatioal collaboration with government and UN structures. 
 
 ## How is the data sustainable?
 Villages change, and map data can get out of date quite quickly. From our work in urban African environments, the Missing Maps has seen that the key to data sustainability is _data use_.
@@ -92,10 +111,22 @@ Once a set of map data becomes sufficiently complete to be operationally useful 
 
 While we don't expect the same type of support for rural areas (because the commercial incentive is less compelling), we nevertheless expect that a complete, accurate, and above all usable dataset of all settlements in sub-Saharan Africa will be so useful to both public and private sector users that, once they begin using it, some will be unwilling to let it degrade.
 
-## Random leftover text for cleanup
-
-By focusing on the basics, the data collection can move fast, and the whole of Sub Sahara Africa can be covered in a timeframe of two years.
-
+## Security
 People will always come before data. If there is any specific risk for people in the communities we wish to map, data will not be collected and/or publicly shared.
 
+## Ethics
+
+
+
+
+## Risks
 A key risk is mission creep: Temptation to fold in other aspects of mapping / data collection beyond its original scope of minimal viable geodata with an initial focus on public health. Keeping the focus on the basics is key.
+
+
+
+## Team
+**[Ivan Gayton]**(https://www.linkedin.com/in/ivan-gayton-a6081b29?originalSubdomain=ca) spent 13 years working with Medecins Sans Frontieres (MSF) as a logistician, Head of Mission, Humanitarian Affairs Advisor, and Innovation Advisor. 
+
+He founded the [Missing Maps project]() a [collaboration between Medecins Sans Frontieres, the Red Cross, and the Humanitarian OpenStreetMap Team](https://www.theguardian.com/cities/2014/oct/06/missing-maps-human-genome-project-unmapped-cities).
+
+[**Ka-Ping Yee**](http://zesty.ca/cv.html) is a software engineer with a career focus on humanitarian work. 
